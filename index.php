@@ -79,3 +79,18 @@ switch($day) {
     default:
         var_dump('whatday');
 }
+for($i = 0; $i < 10; $i++) {
+    var_dump($i);
+}
+for($i = 9; $i < 10; $i--) {
+    var_dump($i);
+}
+for($i = 1; $i < 1_000_000; $i*= 2) {
+    var_dump($i);
+}
+$time = time();
+$counter = 0;
+while(time + 1 > time()){
+    counter++;
+}
+var_dump($counter);
