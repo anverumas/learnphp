@@ -34,6 +34,27 @@ helloName();
 $num = 10;
 if($num > 5) {
     var_dump('bigger');
-} else {
+} elseif ($num == 5) {
+    var_dump('equal');
+}
+else {
     var_dump('smaller');
+}
+$day = (int) date('w');
+var_dump($day);
+
+if($day == 0) {
+    var_dump('sunday');
+} else if($day == 1) {
+    var_dump('monday');
+} else if($day == 2) {
+    var_dump('tuesday');
+} else if($day == 3) {
+    var_dump('wednesday');
+} else if($day == 4) {
+    var_dump('thursday');
+} else if($day == 5) {
+    var_dump('friday');
+} else if($day == 6) {
+    var_dump('saturday');
 }
