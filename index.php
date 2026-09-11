@@ -26,4 +26,14 @@ var_dump($test[3]);
 $combined = [1, 2, 3] + [4, 5, 6, 7];
 var_dump($combined);
 $text = implode('-', $test);
-var_dump($text);
+var_dump($text); 
+function helloName($name='Nameless', $age=0){
+    var_dump("Hello, $name! you are $age years old");
+}
+helloName();
+$num = 10;
+if($num > 5) {
+    var_dump('bigger');
+} else {
+    var_dump('smaller');
+}
