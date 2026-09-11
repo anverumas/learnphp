@@ -53,8 +53,29 @@ if($day == 0) {
     var_dump('wednesday');
 } else if($day == 4) {
     var_dump('thursday');
-} else if($day == 5) {
-    var_dump('friday');
-} else if($day == 6) {
-    var_dump('saturday');
+} else if($day == 5 || $day == 6) {
+    var_dump('partyday');
+} 
+switch($day) {
+    case 0:
+        var_dump('sunday');
+        break;
+    case 1:
+        var_dump('monday');
+        break;
+    case 2:
+        var_dump('tuesday');
+        break;
+    case 3:
+        var_dump('wednesday');
+        break;
+    case 4:
+        var_dump('thursday');
+        break;
+    case 5:
+    case 6:
+        var_dump('Partyday');
+        break;
+    default:
+        var_dump('whatday');
 }
